@@ -5,11 +5,11 @@ import "../CSS/App.css";
 import LogIn from "../../assets/Screenshots/LogIn.png";
 import Menu from "../../assets/Screenshots/Menu.png";
 import Home_FirstTime from "../../assets/Screenshots/Home_FirstTime.png";
-
 import Searching from "../../assets/Screenshots/Searching.png";
 import Search_Results from "../../assets/Screenshots/Search_Results.png";
 import Route_3 from "../../assets/Screenshots/Route_3.png";
-
+//Videos
+import DemoVideo from "../../assets/Videos/DemoVideo.mp4";
 //Components
 import Carousel from "react-material-ui-carousel";
 import {
@@ -19,6 +19,7 @@ import {
   Card,
   CardMedia,
   CardContent,
+  Box,
 } from "@mui/material";
 
 function Body() {
@@ -89,7 +90,28 @@ function Body() {
           paragraph
         >
           Simplify your parking experience with our advanced features.
-        </Typography>
+        </Typography>{" "}
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "5em",
+            marginBottom: "5rem",
+          }}
+        >
+          <video
+            width="100%"
+            height="auto"
+            style={{ borderRadius: "1em" }}
+            controls
+            autoPlay
+            muted
+          >
+            <source src={DemoVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Box>
         <Grid
           container
           spacing={3}
