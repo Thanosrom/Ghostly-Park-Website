@@ -13,7 +13,7 @@ function Footer() {
         </Typography>
         <Typography variant="body2" align="center">
           Ghostly Park <br />
-          Address Terma Tropaiouchou, 53100 <br />
+          {/* Address Terma Tropaiouchou, 53100 <br /> */}
           Phone: +23850 46629 <br />
           Email: info@ghostlypark.com
         </Typography>

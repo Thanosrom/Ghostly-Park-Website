@@ -92,7 +92,7 @@ function Header() {
                 justifyContent: "center",
                 alignItems: "center",
                 overflow: "hidden",
-                padding: 0,
+                padding: 2,
                 margin: 0,
                 width: { xs: "100%", md: "auto" },
               }}

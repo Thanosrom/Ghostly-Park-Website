@@ -2,13 +2,15 @@
 //CSS
 import "../CSS/App.css";
 //Images
-import LogIn from "../../assets/Screenshots/LogIn.png";
-import Menu from "../../assets/Screenshots/Menu.png";
-import Home_FirstTime from "../../assets/Screenshots/Home_FirstTime.png";
-import Searching from "../../assets/Screenshots/Searching.png";
-import Search_Results from "../../assets/Screenshots/Search_Results.png";
-import Route_3 from "../../assets/Screenshots/Route_3.png";
-//Videos
+import Screenshot_Welcome from "../../assets/Screenshots/Screenshot_Welcome.png";
+import Screenshot_Home_1 from "../../assets/Screenshots/Screenshot_Home_1.png";
+import Screenshot_Home_2 from "../../assets/Screenshots/Screenshot_Home_2.png";
+import Screenshot_Login from "../../assets/Screenshots/Screenshot_Login.png";
+import Screenshot_Menu from "../../assets/Screenshots/Screenshot_Menu.png";
+import Screenshot_Register from "../../assets/Screenshots/Screenshot_Register.png";
+import Screenshot_Routing_1 from "../../assets/Screenshots/Screenshot_Routing_1.png";
+import Screenshot_Help from "../../assets/Screenshots/Screenshot_Help.png";
+
 import DemoVideo from "../../assets/Videos/DemoVideo.mp4";
 //Components
 import Carousel from "react-material-ui-carousel";
@@ -25,30 +27,38 @@ import {
 function Body() {
   const carousel_1 = [
     {
-      image: LogIn,
+      image: Screenshot_Welcome,
       description: `Effortlessly access Ghostly Park with our secure login feature. Start your parking journey seamlessly, ensuring every visit begins with ease.`,
     },
     {
-      image: Menu,
+      image: Screenshot_Home_1,
       description: `Explore Ghostly Park's comprehensive menu options. Navigate through features and settings effortlessly to customize your parking experience.`,
     },
     {
-      image: Home_FirstTime,
+      image: Screenshot_Home_2,
       description: `Welcome to Ghostly Park! Discover the app's intuitive interface for the first time. Get started quickly and find available parking spots with just a few taps.`,
+    },
+    {
+      image: Screenshot_Routing_1,
+      description: ` Discover the app's intuitive interface for the first time. Effortlessly navigate through the city with our real-time routing feature, designed to guide you to available parking spots from your mobile device. With just a few taps, you'll find the nearest and most convenient parking options, ensuring a smooth and stress-free experience on the go.`,
     },
   ];
   const carousel_2 = [
     {
-      image: Searching,
+      image: Screenshot_Login,
       description: `Initiate your parking search with Ghostly Park's powerful search feature. Find nearby available spots efficiently to save time and reduce stress.`,
     },
     {
-      image: Search_Results,
+      image: Screenshot_Menu,
       description: `View real-time search results instantly with Ghostly Park. Find detailed information about nearby parking availability and make informed decisions.`,
     },
     {
-      image: Route_3,
+      image: Screenshot_Register,
       description: `Optimize your route with Ghostly Park's advanced navigation. Receive precise directions to your chosen parking spot, ensuring a smooth arrival.`,
+    },
+    {
+      image: Screenshot_Help,
+      description: `Learn how to spend your coins and gems efficiently, understand the functionality of each button, and get tips for making the most out of the app. With our help modal, completing tasks and navigating the app has never been easier!`,
     },
   ];
   return (
