@@ -17,9 +17,15 @@ function Footer() {
           Phone: +23850 46629 <br />
           Email: info@ghostlypark.com
         </Typography>
-        <Button color="inherit">
+        <Button
+          color="inherit"
+          onClick={() =>
+            (window.location.href =
+              "https://ghostlypark.com/privacy_Policy_And_Terms")
+          }
+        >
           <Typography variant="body2" align="center">
-            Contact Us Terms of Service | Privacy Policy | FAQs
+            Terms of Service | Privacy Policy
           </Typography>
         </Button>
         <Typography variant="body2" align="center">

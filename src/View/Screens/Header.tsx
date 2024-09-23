@@ -21,7 +21,9 @@ import {
   Box,
   useMediaQuery,
 } from "@mui/material/";
+import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
+
 function Header() {
   const matches = useMediaQuery("(min-width:600px)");
   const [drawerOpen, setDrawerOpen] = React.useState(false);
@@ -49,7 +51,14 @@ function Header() {
         {["Home", "About Us", "Features", "Pricing", "Contact Us"].map(
           (text) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton>
+              <ListItemButton
+                component={Link}
+                to={
+                  text === "Home"
+                    ? "/"
+                    : `/${text.replace(" ", "").toLowerCase()}`
+                }
+              >
                 <ListItemText primary={text} />
               </ListItemButton>
             </ListItem>
@@ -132,11 +141,21 @@ function Header() {
             </Typography>
             {matches ? (
               <Stack direction="row" spacing={2}>
-                <Button color="inherit">Home</Button>
-                <Button color="inherit">About Us</Button>
-                <Button color="inherit">Features</Button>
-                <Button color="inherit">Pricing</Button>
-                <Button color="inherit">Contact Us</Button>
+                <Button component={Link} to="/" color="inherit">
+                  Home
+                </Button>
+                <Button component={Link} to="/aboutus" color="inherit">
+                  About Us
+                </Button>
+                <Button component={Link} to="/features" color="inherit">
+                  Features
+                </Button>
+                <Button component={Link} to="/pricing" color="inherit">
+                  Pricing
+                </Button>
+                <Button component={Link} to="/contactus" color="inherit">
+                  Contact Us
+                </Button>
                 <Button
                   href="https://ghostlypark-my.sharepoint.com/:p:/p/info/Ed3jevfqjb1Ehdl2sXAr3qQBNi_HmvpxRtO8OfUazEHGGw?e=9oRgNE"
                   color="inherit"
